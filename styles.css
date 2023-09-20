@@ -1,0 +1,56 @@
+ /* styles.css */
+ .product-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    width: 24%; /* this will Show 4 products per row on larger screens */
+    margin: 1%;
+    
+}
+
+@media (max-width: 768px) {
+
+}
+    .product-item {
+        width: 48%; /* Show 2 products per row on mobile devices */
+    }
+::-webkit-scrollbar-thumb /*making the  scrollbar increase by 6px*/
+{
+
+    height:6px
+}* Style the product container */
+.product-container {
+  display: flex;
+  justify-content: space-around; /* Arrange products with space between */
+  flex-wrap: wrap; /* Wrap products to the next line if there's not enough space */
+  max-width: 800px; /* Limit the width of the container */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Style individual product cards */
+.product {
+  width: 30%; /* Set the width of each product card */
+  padding: 20px; /* Add some spacing around each product */
+  border: 1px solid #ccc; /* Add a border for separation */
+  text-align: center; /* Center the content */
+}
+
+.product img {
+  max-width: 100%; /* Ensure product images don't exceed their container */
+}
+
+/* Style product titles */
+.product h2 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+/* Style product prices */
+.product p {
+  font-size: 1rem;
+  color: #0077cc;
+}
+
+
